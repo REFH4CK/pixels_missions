@@ -6,7 +6,7 @@
     "Discord connected": 100,
     "Phone connected": 100,
     "Twitter connected": 50,
-    "Account age per day": 100,
+    "Account age per day": 0.2,
     "Email connected": 5
   },
 
