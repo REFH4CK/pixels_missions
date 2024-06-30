@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "Press-Start";
+  src: url(../public/press-start-2p-v14-latin-regular.woff2);
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 7rem;
+  background: #213461;
+}
+
+.tasklist_container {
+  position: absolute;
+  z-index: 100;
+  width: 7.5rem;
+  cursor: pointer;
+}
+
+.tasklist_corner {
+  z-index: 100;
+}
+
+.corner_image {
+  width: 12rem;
+  image-rendering: pixelated;
+}
+
+.list_image {
+  position: absolute;
+  image-rendering: pixelated;
+  width: 100%;
+}
+
+.roninAddress {
+  font-family: "Press-Start";
+  position: absolute;
+  width: 100vw;
+  padding: 1rem;
+  bottom: 0rem;
+  text-align: center;
+  font-size: .65rem;
+  color: #ffffff;
+  background: var(--bg-text);
+}
+
+.main_title {
+  font-family: "Press-Start";
+  line-height: 5rem;
+  width: 80vw;
+  line-height: 6rem;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 6px 5px 0 rgba(46, 101, 110, 0.644);
+}
+
+.container {
+  height: calc(100vh - 6rem);
+  overflow: auto;
+  padding: 3rem 5rem 5rem 5rem;
+  gap: 1rem 6rem;
+  background: var(--bg-color);
+}
+
+.cards_container {
+  display: grid;
+  grid-template-columns: repeat(2, 35rem);
+  justify-content: center;
+}
+
+
+
+@media (width <= 1330px) and (width >= 1024px) {
+  .container {
+    padding: 5rem 0;
+    grid-template-columns: repeat(2, 32rem);
+  }  
+  .roninAddress {
+    padding: 1rem 0rem;
+    text-align: center;
+    font-size: .5rem;
+  }
+  .main_title {
+    width: 65vw;
+    font-size: 1.7rem;
+  }
+}
+
+@media (width <= 1330px) {
+  .roninAddress {
+    padding: 1rem 0rem;
+    text-align: center;
+    font-size: .8rem;
+  }
+}
+
+@media (width <= 1280px) and (width >= 1000px) {
+  .roninAddress {
+    padding: 1rem 0rem;
+    text-align: center;
+    font-size: .7rem;
+  }
+  .cards_container {
+    grid-template-columns: repeat(1, 32rem);
+  }
+  .reputation_info_container {
+    height: auto;
+    width: 50rem;
+    gap: 2rem;
+  }
+}
+
+@media (width <= 1000px) {
+  .container {
+    padding: 3rem 3rem 3rem 2.5rem;
+  }  
+  .reputation_info_container {
+    flex-direction: column;
+    height: auto;
+    width: 20rem;
+    gap: 2rem;
+  }
+  .cards_container {
+    grid-template-columns: repeat(1, 20rem);
+  }
+}
+
+@media (width <= 999px) {
+  .mission_card {
+    width: 32rem;
+    height: 17rem;
+  }
+  .roninAddress {
+    padding: 1rem 0rem;
+    text-align: center;
+    font-size: .55rem;
+  }
+  .main_title {
+    font-size: 1.4rem;
+    width: 69vw;
+    font-size: 1.5rem;
+  }
+  .tasklist_container {
+    width: 5rem;
+  }
+  .corner_image {
+    width: 8.5rem;
+  }
+}
+
+
+@media (width <= 670px) {
+  .mission_card {
+    width: 32rem;
+    height: 17rem;
+  }
+  .roninAddress {
+    padding-left: 3.5rem;
+    text-align: left;
+    font-size: .44rem;
+  }
+  .main_title {
+    font-size: 1.4rem;
+  }
+  .tasklist_container {
+    width: 5rem;
+  }
+  .corner_image {
+    width: 8.5rem;
+  }
+}
+
+@media (width <= 560px) {
+  .roninAddress {
+    padding-left: 1rem;
+    text-align: left;
+    font-size: .45rem;
+  }
+  .cards_container {
+    grid-template-columns: repeat(1, 32rem);
+  }
+  .main_title {
+    font-size: 1.15rem;
+  }
+  .tasklist_container {
+    width: 5rem;
+  }
+  .corner_image {
+    width: 8.5rem;
+  }
+}
+
+@media (width <= 500px) {
+  .cards_container {
+    grid-template-columns: repeat(1, 20rem);
+  }
+  .mission_card {
+    width: 20rem;
+    height: 12.5rem;
+  }
+  .mission_name, .mission_rep {
+    font-size: .6rem;
+    width: 10rem;
+    line-height: 1.2rem;
+  }
+  .mission_card .mission_name {
+    font-size: .49rem;
+    width: 9rem;
+    line-height: 1.2rem;
+  }
+  .mission_card:nth-of-type(4) .mission_info{
+    padding: 1.5rem 1.8rem 0;
+    height: 3.5rem;
+  }
+  .woodsign_image {
+    top: -.7rem;
+    right: -1rem;
+    width: 9rem;
+    height: 2.5rem;
+  }
+  .mission_rep {
+    width: 7.2rem;
+    white-space: nowrap;
+    font-size: .5rem;
+  }
+  .backpack_slots {
+    margin-top: 1.9rem;
+    height: 90%;
+  }
+  .itm_image {
+    width: 2rem;
+  }
+  .roninAddress {
+    padding-left: 0.5rem;
+    text-align: left;
+    font-size: .4rem;
+    line-height: 0.5rem;
+  }
+  .main_title {
+    font-size: .7rem;
+  }
+  .tasklist_container {
+    width: 2.5rem;
+  }
+  .corner_image {
+    width: 5rem;
+  }
+}

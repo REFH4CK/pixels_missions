@@ -1,0 +1,43 @@
+.reputation_info_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 1rem;
+  background: #213461;
+  margin: auto;
+  width: 66rem;
+  height: 20rem;
+  padding: 3rem;
+  margin-bottom: 5rem;
+  box-shadow: 8px 8px 12px rgb(46, 101, 110);
+  user-select: none;
+}
+
+.rep_info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  font-family: "Press-Start";
+  font-size: .8rem;
+}
+
+.list {
+  line-height: 2;
+  color: #44a526;
+}
+
+.list li {
+  list-style-type: none;
+  background-image: url('../assets/pixel.png');
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.title {
+  font-family: "Press-Start";
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-shadow: 6px 5px 0 rgba(46, 101, 110, 0.644);
+}

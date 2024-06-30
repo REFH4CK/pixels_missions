@@ -1,0 +1,19 @@
+{
+  "reputation": {
+    "Landowner": 1500,
+    "VIP": 1500,
+    "YGG": 200,
+    "Discord connected": 100,
+    "Phone connected": 100,
+    "Twitter connected": 50,
+    "Account age per day": 100,
+    "Email connected": 5
+  },
+
+  "access": {
+    "P2P trade": 700,
+    "Marketplace access": 500,
+    "Unlimited trade": 2000,
+    "Withdrawal permit": 600
+  }
+}

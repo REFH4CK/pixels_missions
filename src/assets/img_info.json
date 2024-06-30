@@ -1,0 +1,18 @@
+[
+    {
+      "img_id": "backpack_top-row",
+      "img_url": "https://d31ss916pli4td.cloudfront.net/game/ui/hud/purple/hud_quickbar_top.png"
+    },
+    {
+      "img_id": "backpack_middle-row",
+      "img_url": "https://d31ss916pli4td.cloudfront.net/game/ui/hud/purple/hud_quickbar_row.png"
+    },
+    {
+      "img_id": "top-circle",
+      "img_url": "https://d31ss916pli4td.cloudfront.net/game/ui/hud/purple/hud_corner_right.png"
+    },
+    {
+      "img_id": "tasklist",
+      "img_url": "https://d31ss916pli4td.cloudfront.net/game/ui/hud/hud_corner_right_note.png"
+    }
+]

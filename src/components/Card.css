@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Press-Start";
+  src: url("https://dashboard.pixels.xyz/assets/fonts/press-start-2p-v14-latin-regular.woff2");
+}
+
+:root {
+  --card-bg: #252547;
+  --text-color: #FFFFFF;
+  --bg-color: #2a629e79;
+  --bg-text: #3c3c6679;
+  overflow: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.mission_card {
+  width: 35rem;
+  height: 18rem;
+  border-radius: 1.3rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px #00000081;
+  overflow: hidden;
+  background-color: var(--card-bg);
+  transform: scale(.9);
+  transition: box-shadow .25s ease-in-out;
+}
+
+.mission_card:hover {
+  box-shadow: 0 4px 16px #000000c0;
+}
+
+.mission_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem 0;
+}
+
+.mission_card:nth-of-type(4) .mission_info{
+  padding: 1.5rem 1.8rem 0;
+  height: 4rem;
+}
+
+.mission_name, .mission_rep {
+  font-family: "Press-Start";
+  color: var(--text-color);
+  font-weight: normal;
+  font-size: 1rem;
+  width: 16rem;
+  line-height: 1.5rem;
+}
+
+.wood_sign {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.woodsign_image {
+  top: -.8rem;
+  right: -1rem;
+  position: absolute;
+  width: 13rem;
+  height: 3rem;
+  image-rendering: pixelated;
+}
+
+.mission_rep {
+  width: 10.5rem;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: .7rem;
+  text-shadow: 4px 3px 0 #000000a6;
+}
+
+.backpack_slots {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 1.5rem;
+  flex-direction: column;
+  transform: rotate(180deg);
+  height: 109%;
+}
+
+.backpack {
+  width: 105%;
+  image-rendering: pixelated;
+}
+
+.backpack_grid{
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(6, 16.6%);
+  grid-template-rows: repeat(2, 30%);
+  transform: rotate(-180deg);
+}
+
+.slot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.itm_image {
+  width: 4rem;
+  image-rendering: pixelated;
+}
+
+.quantity{
+  font-family: "Press-Start";
+  font-size: .6rem;
+  font-weight: normal;
+  position: absolute;
+  bottom: .2rem;
+  right: .8rem;
+  background: #0000004b;
+  text-align: center;
+  width: 1.8rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: .5rem;
+  color: var(--text-color);
+}
+
+.itm_name {
+  display: none;
+  position: absolute;
+  background: #141025ee;
+  color: var(--text-color);
+  font-family: "Segoe UI";
+  transform: translateY(0rem);
+  font-size: .7rem;
+  opacity: 0;
+  border-radius: .5rem;
+  text-align: center;
+  padding: .4rem;
+  transition: opacity .15s ease-in-out, transform .15s ease-in-out;
+}
+
+.slot:hover > .itm_name {
+  display: block;
+  opacity: 1;
+  transform: translateY(-2.5rem);
+}
