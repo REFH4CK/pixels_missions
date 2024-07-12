@@ -182,5 +182,16 @@
         "quantity": 1
       }
     ]
+  },
+  {
+    "mission_name": "Perry’s Pavilion Parley",
+    "repPoints": 400,
+    "deliver": [
+      {
+        "itm_name": "",
+        "itm_image": "",
+        "quantity": ""
+      }
+    ]
   }
 ]
